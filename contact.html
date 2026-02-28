@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Kiara McRae">
+  <meta name="description" content="Contact Chalet Aurora with questions and plan your dream Swiss Alps vacation.">
+  <title>Chalet Aurora | Contact</title>
+
+  <link rel="icon" type="image/png" sizes="64x64" href="./images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Chalet Aurora</a></h1>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a class="is-current" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <div class="container">
+
+      <section class="contact-layout" aria-labelledby="contact-title">
+
+        <div>
+          <img src="images/swiss-valley.jpg"
+               alt="A scenic valley in the Swiss Alps"
+               width="640" height="420">
+
+          <h2 id="contact-title">Contact Us</h2>
+
+          <p>
+            Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+          </p>
+
+          <p>Required fields marked with a *</p>
+
+          <img src="images/swiss-peak.jpg"
+               alt="A snow-capped alpine peak"
+               width="640" height="420">
+        </div>
+
+        <div>
+          <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <fieldset class="field">
+              <legend>Preferred Contact Method *</legend>
+              <label><input type="radio" name="contact" value="email" required> Email</label>
+              <label><input type="radio" name="contact" value="phone" required> Phone</label>
+            </fieldset>
+
+            <div class="field">
+              <label for="comments">Comments *</label>
+              <textarea id="comments" name="comments" rows="6" required></textarea>
+            </div>
+
+            <button class="button" type="submit">Submit</button>
+
+          </form>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Copyright &copy;2023 - Chalet Aurora</p>
+      <p>This site is for educational purposes only</p>
+    </div>
+  </footer>
+
+</body>
+</html>

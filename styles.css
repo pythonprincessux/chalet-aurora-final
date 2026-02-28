@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+:root{
+  --site-width: 1280px;
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --border: #d1d5db;
+  --accent: #0f766e;
+  --accent-2: #0b5f58;
+  --danger: #b91c1c;
+  --focus: #111827;
+}
+
+body{
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container{
+  width: var(--site-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.site-header{
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.site-nav ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav a{
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  color: var(--text);
+}
+
+.site-nav a:hover{
+  background: #e7eef0;
+}
+
+.site-nav a.is-current{
+  background: #d7f3f0;
+  border: 1px solid #9ce3db;
+}
+
+.home .hero{
+  background-image: url("images/swiss-valley.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+}
+
+.hero-inner{
+  background: rgba(255,255,255,0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.content-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card{
+  background: var(--surface);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.contact-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.field{
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+input,
+textarea{
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  font: inherit;
+}
+
+input:focus,
+textarea:focus{
+  outline: 3px solid var(--focus);
+}
+
+input:invalid,
+textarea:invalid{
+  border-color: var(--danger);
+}
+
+.button{
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: var(--accent-2);
+}
+
+.site-footer{
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
